@@ -12,6 +12,7 @@ app.get('/name',(req,res)=>{
 
 app.get('/getage',(req,res)=>{
     console.log("getage wilson")
+    console.log("get age sung jinwoo")
     res.status(200).json({message:29})
 })
 
