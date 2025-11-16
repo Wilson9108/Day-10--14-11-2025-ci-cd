@@ -9,6 +9,6 @@ describe('App Component', () => {
 
     it('add two numbers correctly', () => {
         const sum = 2 + 2
-        expect(sum).toBe(4)
+        expect(sum).toBe(6)
     })
 })
