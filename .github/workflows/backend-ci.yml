@@ -1,9 +1,9 @@
 name: backend CI
 on:
   push:
-    branches: ["main"]
+    branches: ["main","wilson"]
   pull_request:
-    branches: ["main"]
+    branches: ["main","wilson"]
 jobs:
   build:
     runs-on: ubuntu-latest

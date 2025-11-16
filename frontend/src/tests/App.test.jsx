@@ -11,4 +11,9 @@ describe('App Component', () => {
         const sum = 2 + 2
         expect(sum).toBe(4)
     })
+    it("check the fetch users heading",()=>{
+        render(<App/>)
+        const heading = screen.getByText("user Details")
+        console.log(heading)
+    })
 })
