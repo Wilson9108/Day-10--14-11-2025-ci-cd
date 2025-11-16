@@ -23,5 +23,4 @@ jobs:
           run_install: false
       - name: install dependencies    
         run: pnpm install
-      - name: run the backend  
-        run: pnpm start
+        working-directory: backend
