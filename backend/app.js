@@ -11,6 +11,7 @@ app.get('/name',(req,res)=>{
 })
 
 app.get('/getage',(req,res)=>{
+    console.log("getage wilson")
     res.status(200).json({message:29})
 })
 
