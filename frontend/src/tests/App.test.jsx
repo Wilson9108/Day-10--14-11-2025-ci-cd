@@ -9,7 +9,7 @@ describe('App Component', () => {
 
     it('add two numbers correctly', () => {
         const sum = 2 + 2
-         expect(sum).toBe(40)
+         expect(sum).toBe(4)
     })
     it("check the fetch users heading",()=>{
         render(<App/>)

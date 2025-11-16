@@ -1,28 +1,24 @@
-name: backend CI
-on:
-  push:
-    branches: ["main","wilson"]
-  pull_request:
-    branches: ["main","wilson"]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [20.x, 22.x, 24.x]
-    steps:
-      - uses: actions/checkout@v4
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 10.21.0
-          run_install: false
-      - name: install dependencies    
-        run: pnpm install
-        working-directory: backend
-      - name: test comamnd
-        run : pnpm test
+# name: backend CI
+# on:
+#   push:
+#     branches: ["main","wilson"]
+#   pull_request:
+#     branches: ["main","wilson"]
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     strategy:
+#       matrix:
+#         node-version: [20.x, 22.x, 24.x]
+#     steps:
+#       - uses: actions/checkout@v4
+#       - name: Use Node.js ${{ matrix.node-version }}
+#         uses: actions/setup-node@v4
+#         with:
+#           node-version: ${{ matrix.node-version }}
+#       - name: Setup pnpm
+#         uses: pnpm/action-setup@v2
+#         with:
+#           version: 10.21.0
+#           run_install: false
+     

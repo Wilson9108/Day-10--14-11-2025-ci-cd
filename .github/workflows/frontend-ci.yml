@@ -1,4 +1,4 @@
-name: frontend CI
+name:  CI
 on:
   push:
     branches: ["main","wilson"]
@@ -30,3 +30,9 @@ jobs:
       - name: testing frontend
         run: pnpm run test
         working-directory: frontend
+      - name: install dependencies    
+        run: pnpm install
+        working-directory: backend
+      - name: test comamnd
+        run : pnpm test
+        working-directory: backend
