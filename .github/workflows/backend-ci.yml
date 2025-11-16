@@ -24,3 +24,5 @@ jobs:
       - name: install dependencies    
         run: pnpm install
         working-directory: backend
+      - name: test comamnd
+        run : pnpm test
