@@ -13,7 +13,7 @@ describe('App Component', () => {
     })
     it("check the fetch users heading",()=>{
         render(<App/>)
-        const heading = screen.getByText("user Detail")
+        const heading = screen.getByText("user Details")
         console.log(heading)
     })
 })
